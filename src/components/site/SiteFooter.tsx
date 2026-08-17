@@ -7,16 +7,16 @@ export function SiteFooter() {
         <div>
           <p className="font-serif text-2xl">Wendy's Bakehouse</p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            A small-batch pastry atelier crafting sculptural cakes and sugar work for weddings and
-            milestones across the Kankakee River Valley.
+            A cottage-style premium pastry atelier crafting sculptural cakes, cupcakes and iced sugar
+            cookies for weddings and milestones across the Greater Toronto Area.
           </p>
         </div>
         <div>
           <p className="eyebrow">Studio</p>
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            412 N Kinzie Ave
+            Etobicoke, Toronto
             <br />
-            Bradley, IL 60915
+            Ontario, Canada
             <br />
             By appointment — Tue to Sat
           </p>
@@ -38,7 +38,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-border px-6 py-6 text-center text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground lg:px-10">
-        © {new Date().getFullYear()} Wendy's Bakehouse — Bradley, Illinois
+        © {new Date().getFullYear()} Wendy's Bakehouse — Etobicoke, Toronto, Ontario
       </div>
     </footer>
   );

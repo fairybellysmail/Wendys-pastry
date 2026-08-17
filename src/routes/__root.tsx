@@ -83,13 +83,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Couture custom cakes, palette-knife artistry and sugar cookies handcrafted in Bradley, Illinois.",
+          "Couture custom cakes, palette-knife artistry and sugar cookies handcrafted in Etobicoke, Toronto.",
       },
       { name: "author", content: "Wendy's Bakehouse" },
       { property: "og:title", content: "Wendy's Bakehouse — Edible Art Studio" },
       {
         property: "og:description",
-        content: "Couture custom cakes handcrafted in Bradley, Illinois.",
+        content: "Couture custom cakes handcrafted in Etobicoke, Toronto.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -32,7 +32,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
         <Link to="/" className="leading-none">
           <span className="block font-serif text-xl tracking-tight">Wendy's Bakehouse</span>
-          <span className="eyebrow mt-1 block text-[0.6rem]">Bradley, Illinois</span>
+          <span className="eyebrow mt-1 block text-[0.6rem]">Etobicoke, Toronto</span>
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex">

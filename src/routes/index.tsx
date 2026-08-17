@@ -1,24 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import heroCake from "@/assets/hero-cake.jpg";
 import workPalette from "@/assets/work-palette.jpg";
 import workCookies from "@/assets/work-cookies.jpg";
 import workWedding from "@/assets/work-wedding.jpg";
+import { HeroCarousel } from "@/components/site/HeroCarousel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The Edible Art Studio — Wendy's Bakehouse, Bradley IL" },
+      { title: "The Edible Art Studio — Wendy's Bakehouse, Toronto" },
       {
         name: "description",
         content:
-          "Wendy's Bakehouse is a boutique pastry atelier in Bradley, Illinois, sculpting custom cakes, palette-knife artistry and sugar cookies for weddings and milestones.",
+          "Wendy's Bakehouse is a cottage-style premium pastry atelier in Etobicoke, Toronto, sculpting bespoke cakes, wedding tiers, themed cupcakes and iced sugar cookies.",
       },
       { property: "og:title", content: "The Edible Art Studio — Wendy's Bakehouse" },
       {
         property: "og:description",
         content:
-          "Sculptural custom cakes and sugar work, handcrafted in small batches in Bradley, Illinois.",
+          "Sculptural custom cakes and sugar work, handcrafted in small batches in Etobicoke, Toronto.",
       },
     ],
   }),
@@ -51,25 +51,25 @@ const testimonials = [
     quote:
       "Our wedding cake looked like a sculpture we happened to be allowed to eat. Guests photographed it for twenty minutes before we cut it.",
     name: "Elena & Marcus R.",
-    context: "Wedding — Kankakee, IL",
+    context: "Wedding — Etobicoke, ON",
   },
   {
     quote:
       "Wendy took a swatch of my mother's china and translated it into a palette-knife cake. It was the centerpiece of her 70th.",
     name: "Priya N.",
-    context: "Milestone Birthday — Bourbonnais, IL",
+    context: "Milestone Birthday — Mississauga, ON",
   },
   {
     quote:
       "The chocolate fudge is dangerously good. Restrained on the outside, completely indulgent on the inside.",
     name: "Daniel K.",
-    context: "Sweet 16 — Bradley, IL",
+    context: "Sweet 16 — High Park, Toronto",
   },
   {
     quote:
       "Delivery was flawless, on time, and set up with more care than our florist showed. Worth every dollar.",
     name: "The Halvorsen Family",
-    context: "Anniversary — Manteno, IL",
+    context: "Anniversary — Oakville, ON",
   },
 ];
 
@@ -77,18 +77,18 @@ function Index() {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 pt-16 pb-24 lg:grid-cols-[1fr_1.05fr] lg:gap-20 lg:px-10 lg:pt-24 lg:pb-32">
-          <div className="animate-fade-up">
-            <p className="eyebrow">Bradley, Illinois · Est. 2014</p>
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-12 lg:px-10 lg:pt-24">
+          <div className="animate-fade-up max-w-2xl">
+            <p className="eyebrow">Etobicoke, Toronto · Est. 2014</p>
             <h1 className="mt-7 text-5xl leading-[1.04] tracking-tight md:text-6xl lg:text-7xl">
               The Edible
               <br />
               <span className="italic text-accent">Art Studio</span>
             </h1>
-            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-muted-foreground">
-              Every commission begins as a drawing and ends as a centerpiece. Small-batch cakes,
-              palette-knife buttercream and gilded sugar work — made one date at a time so nothing is
-              rushed.
+            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-muted-foreground">
+              Every commission begins as a drawing and ends as a centerpiece. Bespoke celebration
+              cakes, wedding tiers, themed cupcakes and iced sugar cookies — made a few dates at a
+              time so nothing is rushed.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Button asChild variant="atelier" size="atelier">
@@ -98,7 +98,7 @@ function Index() {
                 <Link to="/portfolio">View the Portfolio</Link>
               </Button>
             </div>
-            <dl className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
+            <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
               {[
                 ["10", "commissions per week"],
                 ["40mi", "delivery radius"],
@@ -113,17 +113,10 @@ function Index() {
               ))}
             </dl>
           </div>
+        </div>
 
-          <div className="relative">
-            <div className="absolute -inset-6 -z-10 hidden rounded-none bg-secondary/60 lg:block" />
-            <img
-              src={heroCake}
-              alt="Four-tier ivory buttercream cake finished with gold leaf on cream linen"
-              width={1600}
-              height={1104}
-              className="h-[26rem] w-full object-cover shadow-[var(--shadow-atelier)] md:h-[34rem] lg:h-[38rem]"
-            />
-          </div>
+        <div className="pb-20 lg:pb-28">
+          <HeroCarousel />
         </div>
       </section>
 

@@ -77,18 +77,18 @@ function Index() {
   return (
     <>
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 pt-16 pb-24 lg:grid-cols-[1fr_1.05fr] lg:gap-20 lg:px-10 lg:pt-24 lg:pb-32">
-          <div className="animate-fade-up">
-            <p className="eyebrow">Bradley, Illinois · Est. 2014</p>
+        <div className="mx-auto max-w-7xl px-6 pt-16 pb-12 lg:px-10 lg:pt-24">
+          <div className="animate-fade-up max-w-2xl">
+            <p className="eyebrow">Etobicoke, Toronto · Est. 2014</p>
             <h1 className="mt-7 text-5xl leading-[1.04] tracking-tight md:text-6xl lg:text-7xl">
               The Edible
               <br />
               <span className="italic text-accent">Art Studio</span>
             </h1>
-            <p className="mt-8 max-w-md text-[0.95rem] leading-relaxed text-muted-foreground">
-              Every commission begins as a drawing and ends as a centerpiece. Small-batch cakes,
-              palette-knife buttercream and gilded sugar work — made one date at a time so nothing is
-              rushed.
+            <p className="mt-8 max-w-lg text-[0.95rem] leading-relaxed text-muted-foreground">
+              Every commission begins as a drawing and ends as a centerpiece. Bespoke celebration
+              cakes, wedding tiers, themed cupcakes and iced sugar cookies — made a few dates at a
+              time so nothing is rushed.
             </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Button asChild variant="atelier" size="atelier">
@@ -98,7 +98,7 @@ function Index() {
                 <Link to="/portfolio">View the Portfolio</Link>
               </Button>
             </div>
-            <dl className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
+            <dl className="mt-12 grid max-w-md grid-cols-3 gap-6 border-t border-border pt-8">
               {[
                 ["10", "commissions per week"],
                 ["40mi", "delivery radius"],
@@ -113,17 +113,10 @@ function Index() {
               ))}
             </dl>
           </div>
+        </div>
 
-          <div className="relative">
-            <div className="absolute -inset-6 -z-10 hidden rounded-none bg-secondary/60 lg:block" />
-            <img
-              src={heroCake}
-              alt="Four-tier ivory buttercream cake finished with gold leaf on cream linen"
-              width={1600}
-              height={1104}
-              className="h-[26rem] w-full object-cover shadow-[var(--shadow-atelier)] md:h-[34rem] lg:h-[38rem]"
-            />
-          </div>
+        <div className="pb-20 lg:pb-28">
+          <HeroCarousel />
         </div>
       </section>
 

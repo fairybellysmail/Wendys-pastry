@@ -51,25 +51,25 @@ const testimonials = [
     quote:
       "Our wedding cake looked like a sculpture we happened to be allowed to eat. Guests photographed it for twenty minutes before we cut it.",
     name: "Elena & Marcus R.",
-    context: "Wedding — Kankakee, IL",
+    context: "Wedding — Etobicoke, ON",
   },
   {
     quote:
       "Wendy took a swatch of my mother's china and translated it into a palette-knife cake. It was the centerpiece of her 70th.",
     name: "Priya N.",
-    context: "Milestone Birthday — Bourbonnais, IL",
+    context: "Milestone Birthday — Mississauga, ON",
   },
   {
     quote:
       "The chocolate fudge is dangerously good. Restrained on the outside, completely indulgent on the inside.",
     name: "Daniel K.",
-    context: "Sweet 16 — Bradley, IL",
+    context: "Sweet 16 — High Park, Toronto",
   },
   {
     quote:
       "Delivery was flawless, on time, and set up with more care than our florist showed. Worth every dollar.",
     name: "The Halvorsen Family",
-    context: "Anniversary — Manteno, IL",
+    context: "Anniversary — Oakville, ON",
   },
 ];
 

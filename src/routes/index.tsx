@@ -1,24 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import heroCake from "@/assets/hero-cake.jpg";
 import workPalette from "@/assets/work-palette.jpg";
 import workCookies from "@/assets/work-cookies.jpg";
 import workWedding from "@/assets/work-wedding.jpg";
+import { HeroCarousel } from "@/components/site/HeroCarousel";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "The Edible Art Studio — Wendy's Bakehouse, Bradley IL" },
+      { title: "The Edible Art Studio — Wendy's Bakehouse, Toronto" },
       {
         name: "description",
         content:
-          "Wendy's Bakehouse is a boutique pastry atelier in Bradley, Illinois, sculpting custom cakes, palette-knife artistry and sugar cookies for weddings and milestones.",
+          "Wendy's Bakehouse is a cottage-style premium pastry atelier in Etobicoke, Toronto, sculpting bespoke cakes, wedding tiers, themed cupcakes and iced sugar cookies.",
       },
       { property: "og:title", content: "The Edible Art Studio — Wendy's Bakehouse" },
       {
         property: "og:description",
         content:
-          "Sculptural custom cakes and sugar work, handcrafted in small batches in Bradley, Illinois.",
+          "Sculptural custom cakes and sugar work, handcrafted in small batches in Etobicoke, Toronto.",
       },
     ],
   }),

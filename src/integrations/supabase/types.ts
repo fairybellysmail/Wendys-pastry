@@ -100,13 +100,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      week_capacity: {
-        Args: { _from: string; _to: string }
-        Returns: {
-          points: number
-          week_start: string
-        }[]
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never

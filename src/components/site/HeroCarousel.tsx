@@ -4,6 +4,9 @@ import carouselWedding from "@/assets/carousel-wedding-tiers.jpg";
 import carouselBespoke from "@/assets/carousel-bespoke.jpg";
 import carouselCupcakes from "@/assets/carousel-cupcakes.jpg";
 import carouselCookies from "@/assets/carousel-cookies.jpg";
+import cakeSafari from "@/assets/cake-safari-wild.jpg.asset.json";
+import cakeBaileys from "@/assets/cake-baileys-black.jpg.asset.json";
+import cakeHeart from "@/assets/cake-ruby-heart.jpg.asset.json";
 
 const slides = [
   {
@@ -12,14 +15,32 @@ const slides = [
     caption: "Hand-applied gold leaf, sugar florals, four tiers",
   },
   {
+    image: cakeSafari.url,
+    title: "The Wild One Safari Cake",
+    caption: "Hand-sculpted jungle figurines, fondant foliage",
+    alt: "Safari birthday cake with sculpted giraffe, lion and elephant, fondant palm leaves and a gold Wild topper",
+  },
+  {
     image: carouselBespoke,
     title: "Bespoke Celebration Cakes",
     caption: "Palette-knife buttercream in cream and champagne",
   },
   {
+    image: cakeBaileys.url,
+    title: "The Baileys Black Edition",
+    caption: "Matte black texture, silver script and foil",
+    alt: "Square matte black textured cake with silver piped Happy Birthday script, silver foil accents and a Baileys bottle",
+  },
+  {
     image: carouselCupcakes,
     title: "Themed Cupcakes",
     caption: "Silk-swirl buttercream with edible gold",
+  },
+  {
+    image: cakeHeart.url,
+    title: "Ruby Heart Ruffle",
+    caption: "Piped rosette border, silver dragee finish",
+    alt: "Heart-shaped deep red buttercream cake with piped rosette border and silver dragee sprinkles",
   },
   {
     image: carouselCookies,
@@ -48,7 +69,7 @@ export function HeroCarousel() {
           >
             <img
               src={slide.image}
-              alt={slide.title}
+              alt={"alt" in slide ? slide.alt : slide.title}
               width={1008}
               height={1264}
               loading={i === 0 ? "eager" : "lazy"}

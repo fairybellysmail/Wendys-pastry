@@ -14,13 +14,99 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      orders: {
+        Row: {
+          created_at: string
+          customer_email: string
+          customer_name: string
+          customer_phone: string | null
+          delivery_fee_cents: number
+          deposit_amount_cents: number
+          deposit_status: string
+          design_notes: string | null
+          distance_miles: number
+          event_date: string
+          event_postal_code: string
+          flavor_profile: string
+          fulfillment_method: string
+          id: string
+          notification_email: string
+          notification_logged_at: string | null
+          notification_status: string
+          occasion: string
+          reference_files: string[]
+          servings: string | null
+          status: string
+          style: string
+          week_start: string
+          workload_points: number
+        }
+        Insert: {
+          created_at?: string
+          customer_email: string
+          customer_name: string
+          customer_phone?: string | null
+          delivery_fee_cents?: number
+          deposit_amount_cents?: number
+          deposit_status?: string
+          design_notes?: string | null
+          distance_miles: number
+          event_date: string
+          event_postal_code: string
+          flavor_profile: string
+          fulfillment_method: string
+          id?: string
+          notification_email?: string
+          notification_logged_at?: string | null
+          notification_status?: string
+          occasion: string
+          reference_files?: string[]
+          servings?: string | null
+          status?: string
+          style: string
+          week_start: string
+          workload_points: number
+        }
+        Update: {
+          created_at?: string
+          customer_email?: string
+          customer_name?: string
+          customer_phone?: string | null
+          delivery_fee_cents?: number
+          deposit_amount_cents?: number
+          deposit_status?: string
+          design_notes?: string | null
+          distance_miles?: number
+          event_date?: string
+          event_postal_code?: string
+          flavor_profile?: string
+          fulfillment_method?: string
+          id?: string
+          notification_email?: string
+          notification_logged_at?: string | null
+          notification_status?: string
+          occasion?: string
+          reference_files?: string[]
+          servings?: string | null
+          status?: string
+          style?: string
+          week_start?: string
+          workload_points?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      week_capacity: {
+        Args: { _from: string; _to: string }
+        Returns: {
+          points: number
+          week_start: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never

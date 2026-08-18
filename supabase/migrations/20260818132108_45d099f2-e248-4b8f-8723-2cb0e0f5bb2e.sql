@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.week_capacity(DATE, DATE) FROM anon, authenticated;

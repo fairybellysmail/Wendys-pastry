@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS public.week_capacity(DATE, DATE);
